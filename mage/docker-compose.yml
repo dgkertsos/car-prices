@@ -19,4 +19,5 @@ services:
       - ./data_loaders:/home/src/${PROJECT_NAME}/data_loaders
       - ./pipelines:/home/src/${PROJECT_NAME}/pipelines
       - ./transformers:/home/src/${PROJECT_NAME}/transformers
+      - ./io_config.yaml:/home/src/${PROJECT_NAME}/io_config.yaml
     restart: on-failure:5
