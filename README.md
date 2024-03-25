@@ -51,8 +51,7 @@ https://docs.mage.ai/getting-started/setup
 
 For this we must have git and Docker installed. Then we run the following commands:
 
-git clone https://github.com/mage-ai/compose-quickstart.git mage-car-prices
-cd mage-car-prices 
+cd mage 
 cp dev.env .env 
 rm dev.env 
 docker-compose up
