@@ -16,4 +16,7 @@ services:
     volumes:
       - .:/home/src/
       - ./data_exporters:/home/src/${PROJECT_NAME}/data_exporters
+      - ./data_loaders:/home/src/${PROJECT_NAME}/data_loaders
+      - ./pipelines:/home/src/${PROJECT_NAME}/pipelines
+      - ./transformers:/home/src/${PROJECT_NAME}/transformers
     restart: on-failure:5
