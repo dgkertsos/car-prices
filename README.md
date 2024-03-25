@@ -12,9 +12,12 @@ After downloading the dataset it was divided into 4 parts because of the gitHub 
 
 The four files can be found in the data folder.
 
-* Moving data to a bucket +
 ***************************
-First we need to create a GCP bucket. For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
+* Moving data to a bucket *
+***************************
+ - Create a GCP bucket 
+ 
+ For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
 
     1. For the provider
         a. Replace the project ID with your GCP project ID
@@ -42,3 +45,20 @@ Then from the terraform directory we execute:
 The bucket is created in our GCP storage.
 
 - Run Mage
+Used instructions from mage.ai website:
+
+https://docs.mage.ai/getting-started/setup
+
+For this we must have git and Docker installed. Then we run the following commands:
+
+git clone https://github.com/mage-ai/compose-quickstart.git mage-car-prices
+cd mage-car-prices 
+cp dev.env .env 
+rm dev.env 
+docker-compose up
+
+And then we can access Mage by typing:
+
+http://localhost:6789
+
+in our browser.
