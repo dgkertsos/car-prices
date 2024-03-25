@@ -49,15 +49,17 @@ Used instructions from mage.ai website:
 
 https://docs.mage.ai/getting-started/setup
 
-For this we must have git and Docker installed. Then we run the following commands:
+For this you must have git and Docker installed. Then you run the following commands:
 
 cd mage 
 cp dev.env .env 
 rm dev.env 
 docker-compose up
 
-And then we can access Mage by typing:
+Forward port 6789 on your local machine.
+
+Then you can access Mage by typing:
 
 http://localhost:6789
 
-in our browser.
+in your browser.
