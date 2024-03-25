@@ -13,7 +13,7 @@ After downloading the dataset it was divided into 4 parts because of the gitHub 
 The four files can be found in the data folder.
 
 ***************************
-* Moving data to a bucket *
+Moving the data to a bucket
 ***************************
  - Create a GCP bucket 
  
