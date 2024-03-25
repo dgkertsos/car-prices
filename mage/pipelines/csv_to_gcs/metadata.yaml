@@ -30,7 +30,7 @@ blocks:
   timeout: null
   type: transformer
   upstream_blocks:
-  - bl_csv_to_gsc
+  - bl_csv_to_gcs
   uuid: tr_fix_dates
 - all_upstream_blocks_executed: true
   color: null
