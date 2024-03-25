@@ -15,4 +15,5 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
+      - ./data_exporters:/home/src/${PROJECT_NAME}/data_exporters
     restart: on-failure:5
