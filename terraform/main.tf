@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
 # Credentials only needs to be set if you do not have the GOOGLE_APPLICATION_CREDENTIALS set
-#  credentials = 
+  credentials = "<Path to your service account key file>"
   project = "<Your Project ID>"
   region  = "<Your Region>"
 }
@@ -18,7 +18,7 @@ provider "google" {
 
 resource "google_storage_bucket" "data-lake-bucket" {
   name          = "<Your Unique Bucket Name>"
-  location      = "<Your Location"
+  location      = "<Your Location>"
 
   # Optional, but recommended settings:
   storage_class = "STANDARD"
