@@ -12,8 +12,8 @@ After downloading the dataset it was divided into 4 parts because of the gitHub 
 
 The four files can be found in the data folder.
 
-Moving data to a bucket
-***********************
+* Moving data to a bucket +
+***************************
 First we need to create a GCP bucket. For this we will use terraform which must be installed on our computer. Then we have to modify the main.tf file located in the terraform folder. We are going to make the following changes:
 
     1. For the provider
@@ -23,7 +23,15 @@ First we need to create a GCP bucket. For this we will use terraform which must 
         a. Replace name with your bucket name
         b. Replace the bucket location with your bucket location
 
-We also have to copy our service account json file to the keys directory. Then from the terraform directory we execute:
+We also have to copy our service account json file to the keys directory or paste the contents of our json file to the tf_service_account.json file. 
+
+NOTE:
+The service account can be created with the following roles:
+    Storage Admin
+    BigQuery Admin
+    Compute Admin
+    
+Then from the terraform directory we execute:
 
     terraform init
     terraform plan
@@ -33,3 +41,4 @@ We also have to copy our service account json file to the keys directory. Then f
 
 The bucket is created in our GCP storage.
 
+- Run Mage
